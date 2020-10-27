@@ -1,6 +1,25 @@
-# Godot-Project-Template
+# Project Name
+04-2D-Platformer
 
-This is an empty Godot project that can be used as a starting place for Godot repositories. After creating and cloning the repository, download this as a zip file. Unzip it and copy the files into the repository folder. You should then be able to import the project.godot file (in the repository folder) as a project in Godot. Make sure you change the project name in the Project Settings.
+Description:
+
+A 2D Platformer
 
 ## Implementation
-Created in Godot 3.2.2
+Which features you included
+
+## References
+
+Music:
+SCP-x7x (6th Floor) by Kevin MacLeod
+Link: https://incompetech.filmmusic.io/song/6737-scp-x7x-6th-floor-
+License: http://creativecommons.org/licenses/by/4.0/
+
+Sprites:
+By Buch
+http://blog-buch.rhcloud.com
+
+## Future Development
+
+## Created by
+Erik Hultgren
