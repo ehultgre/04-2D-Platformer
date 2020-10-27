@@ -15,9 +15,8 @@ SCP-x7x (6th Floor) by Kevin MacLeod
 Link: https://incompetech.filmmusic.io/song/6737-scp-x7x-6th-floor-
 License: http://creativecommons.org/licenses/by/4.0/
 
-Sprites:
-By Buch
-http://blog-buch.rhcloud.com
+Jumping Sound:
+http://soundbible.com/1601-Mario-Jumping.html
 
 ## Future Development
 
