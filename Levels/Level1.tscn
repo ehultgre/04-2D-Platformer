@@ -1,10 +1,11 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Assets/spritesheet_default.png" type="Texture" id=1]
 [ext_resource path="res://Camera.gd" type="Script" id=2]
-[ext_resource path="res://Assets/enemy_ground.png" type="Texture" id=3]
+[ext_resource path="res://Enemy/Enemy_Ground.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Player/Player_Container.gd" type="Script" id=4]
-[ext_resource path="res://Enemy/Enemy_Ground.gd" type="Script" id=5]
+[ext_resource path="res://Enemy/Enemy_Flying.tscn" type="PackedScene" id=5]
+[ext_resource path="res://HUD/HUD.gd" type="Script" id=6]
 
 [sub_resource type="TileSet" id=1]
 0/name = "spritesheet_default.png 0"
@@ -389,15 +390,9 @@ script = ExtResource( 4 )
 
 [node name="Enemy_Container" type="Node2D" parent="."]
 
-[node name="Enemy_Ground" type="KinematicBody2D" parent="Enemy_Container"]
-position = Vector2( 1804.54, 537.401 )
-script = ExtResource( 5 )
+[node name="Enemy_Ground" parent="Enemy_Container" instance=ExtResource( 3 )]
 
-[node name="Sprite" type="Sprite" parent="Enemy_Container/Enemy_Ground"]
-texture = ExtResource( 3 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Enemy_Container/Enemy_Ground"]
-polygon = PoolVector2Array( 21, -26.1, 21, -22.7, 24, -18.7, 24, -2, 25.2, 9, 24, 9, 24, 19, 22, 19, 12, 32, -10.2, 32, -18, 27.1, -18, 24.7, -24, 17.7, -24, 10, -25, -13, -23.8, -13, -22.8, -23, -20.9, -23, -13, -31.7, 12.1, -32 )
+[node name="Enemy_Flying" parent="Enemy_Container" instance=ExtResource( 5 )]
 
 [node name="Coin_Container" type="Node2D" parent="."]
 
@@ -420,3 +415,38 @@ drag_margin_top = 0.1
 drag_margin_right = 0.1
 drag_margin_bottom = 0.1
 script = ExtResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Control" parent="CanvasLayer"]
+margin_right = 611.0
+margin_bottom = 43.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/HUD"]
+margin_right = 1024.0
+margin_bottom = 20.0
+color = Color( 0, 0, 0, 0.501961 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="CanvasLayer/HUD"]
+margin_left = 512.0
+margin_right = 1024.0
+margin_bottom = 20.0
+text = "Score"
+align = 2
+valign = 1
+
+[node name="Lives" type="Label" parent="CanvasLayer/HUD"]
+margin_right = 512.0
+margin_bottom = 20.0
+text = "Lives"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
