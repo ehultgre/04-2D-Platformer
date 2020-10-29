@@ -6,7 +6,10 @@ Description:
 A 2D Platformer
 
 ## Implementation
-Which features you included
+Save/Load
+Enemies
+Levels
+Score
 
 ## References
 
