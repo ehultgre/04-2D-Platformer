@@ -10,7 +10,7 @@
 [ext_resource path="res://Assets/tile_door.png" type="Texture" id=8]
 [ext_resource path="res://Coin/Coin.tscn" type="PackedScene" id=9]
 
-[sub_resource type="TileSet" id=1]
+[sub_resource type="TileSet" id=17]
 0/name = "spritesheet_default.png 0"
 0/texture = ExtResource( 3 )
 0/tex_offset = Vector2( 0, 0 )
@@ -279,8 +279,64 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 6/z_index = 0
+7/name = "spritesheet_default.png 7"
+7/texture = ExtResource( 3 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 640, 64, 64, 128 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "spritesheet_default.png 8"
+8/texture = ExtResource( 3 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 640, 192, 64, 128 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "spritesheet_default.png 9"
+9/texture = ExtResource( 3 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 128, 320, 64, 64 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "spritesheet_default.png 10"
+10/texture = ExtResource( 3 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 128, 256, 64, 64 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
 
-[sub_resource type="TileSet" id=17]
+[sub_resource type="TileSet" id=18]
 0/name = "spritesheet_default.png 0"
 0/texture = ExtResource( 3 )
 0/tex_offset = Vector2( 0, 0 )
@@ -371,22 +427,23 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 [node name="Background_Image" type="Sprite" parent="."]
 
 [node name="Background" type="TileMap" parent="."]
-tile_set = SubResource( 1 )
+tile_set = SubResource( 17 )
 collision_layer = 0
 collision_mask = 0
 format = 1
+tile_data = PoolIntArray( 22, 0, 0, 32, 0, 0, 196611, 0, 0, 196622, 1, 0, 262152, 0, 0, 262164, 0, 0, 458783, 1, 0 )
 
 [node name="Ground" type="TileMap" parent="."]
 tile_set = SubResource( 16 )
 collision_layer = 2
 format = 1
-tile_data = PoolIntArray( -65536, 6, 0, -65501, 6, 0, 0, 6, 0, 35, 6, 0, 65536, 6, 0, 65571, 6, 0, 131072, 6, 0, 131107, 6, 0, 196608, 6, 0, 196643, 6, 0, 262144, 6, 0, 262179, 6, 0, 327680, 6, 0, 327715, 6, 0, 393216, 6, 0, 393251, 6, 0, 458752, 6, 0, 458787, 6, 0, 524288, 6, 0, 524323, 6, 0, 589824, 3, 0, 589825, 3, 0, 589826, 3, 0, 589827, 3, 0, 589828, 3, 0, 589829, 3, 0, 589830, 3, 0, 589831, 3, 0, 589832, 3, 0, 589833, 3, 0, 589834, 3, 0, 589835, 3, 0, 589836, 3, 0, 589837, 3, 0, 589838, 3, 0, 589839, 3, 0, 589840, 3, 0, 589841, 3, 0, 589842, 3, 0, 589843, 3, 0, 589844, 3, 0, 589845, 3, 0, 589846, 3, 0, 589847, 3, 0, 589848, 3, 0, 589849, 3, 0, 589850, 3, 0, 589851, 3, 0, 589852, 3, 0, 589853, 3, 0, 589854, 3, 0, 589855, 3, 0, 589856, 3, 0, 589857, 3, 0, 589858, 3, 0, 589859, 6, 0 )
+tile_data = PoolIntArray( -65536, 6, 0, -65501, 6, 0, 0, 6, 0, 15, 9, 0, 29, 9, 0, 35, 6, 0, 65536, 6, 0, 65556, 9, 0, 65571, 6, 0, 131072, 6, 0, 131104, 9, 0, 131107, 6, 0, 196608, 6, 0, 196643, 6, 0, 262144, 6, 0, 262150, 8, 0, 262161, 7, 0, 262170, 7, 0, 262179, 6, 0, 327680, 6, 0, 327715, 6, 0, 393216, 6, 0, 393239, 9, 0, 393251, 6, 0, 458752, 6, 0, 458787, 6, 0, 524288, 6, 0, 524300, 9, 0, 524307, 9, 0, 524323, 6, 0, 589824, 3, 0, 589825, 3, 0, 589826, 3, 0, 589827, 3, 0, 589828, 3, 0, 589829, 3, 0, 589830, 3, 0, 589831, 3, 0, 589832, 3, 0, 589833, 3, 0, 589834, 3, 0, 589835, 3, 0, 589836, 3, 0, 589837, 3, 0, 589838, 3, 0, 589839, 3, 0, 589840, 3, 0, 589841, 3, 0, 589842, 3, 0, 589843, 3, 0, 589844, 3, 0, 589845, 3, 0, 589846, 3, 0, 589847, 3, 0, 589848, 3, 0, 589849, 3, 0, 589850, 3, 0, 589851, 3, 0, 589852, 3, 0, 589853, 3, 0, 589854, 3, 0, 589855, 3, 0, 589856, 3, 0, 589857, 3, 0, 589858, 3, 0, 589859, 6, 0 )
 
 [node name="Platform" type="TileMap" parent="."]
 tile_set = SubResource( 16 )
 collision_layer = 2
 format = 1
-tile_data = PoolIntArray( 35, 6, 0, 65571, 6, 0, 131107, 6, 0, 196622, 4, 0, 196623, 4, 0, 196624, 4, 0, 196643, 6, 0, 262179, 6, 0, 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327697, 4, 0, 327698, 4, 0, 327699, 4, 0, 327700, 4, 0, 327715, 6, 0, 393251, 6, 0, 458757, 4, 0, 458758, 4, 0, 458759, 4, 0, 458774, 4, 0, 458775, 4, 0, 458776, 4, 0, 458787, 6, 0, 524323, 6, 0, 589825, 3, 0, 589826, 3, 0, 589827, 3, 0, 589828, 3, 0, 589829, 3, 0, 589830, 3, 0, 589831, 3, 0, 589832, 3, 0, 589833, 3, 0, 589834, 3, 0, 589835, 3, 0, 589836, 3, 0, 589837, 3, 0, 589838, 3, 0, 589839, 3, 0, 589840, 3, 0, 589841, 3, 0, 589842, 3, 0, 589843, 3, 0, 589844, 3, 0, 589845, 3, 0, 589846, 3, 0, 589847, 3, 0, 589848, 3, 0, 589849, 3, 0, 589850, 3, 0, 589851, 3, 0, 589852, 3, 0, 589853, 3, 0, 589854, 3, 0, 589855, 3, 0, 589856, 3, 0, 589857, 3, 0, 589858, 3, 0, 589859, 6, 0 )
+tile_data = PoolIntArray( 35, 6, 0, 65537, 4, 0, 65538, 4, 0, 65539, 4, 0, 65545, 4, 0, 65546, 4, 0, 65549, 4, 0, 65550, 4, 0, 65551, 4, 0, 65552, 4, 0, 65553, 4, 0, 65564, 4, 0, 65565, 4, 0, 65566, 4, 0, 65570, 4, 0, 65571, 6, 0, 131077, 4, 0, 131078, 4, 0, 131092, 4, 0, 131093, 4, 0, 131098, 4, 0, 131105, 4, 0, 131106, 4, 0, 131107, 6, 0, 196631, 4, 0, 196632, 4, 0, 196640, 4, 0, 196641, 4, 0, 196642, 4, 0, 196643, 6, 0, 262175, 4, 0, 262176, 4, 0, 262177, 4, 0, 262178, 4, 0, 262179, 6, 0, 327681, 4, 0, 327682, 4, 0, 327683, 4, 0, 327700, 4, 0, 327701, 4, 0, 327708, 4, 0, 327709, 4, 0, 327710, 4, 0, 327711, 4, 0, 327712, 4, 0, 327713, 4, 0, 327714, 4, 0, 327715, 6, 0, 393221, 4, 0, 393222, 4, 0, 393225, 4, 0, 393226, 4, 0, 393229, 4, 0, 393230, 4, 0, 393231, 4, 0, 393232, 4, 0, 393233, 4, 0, 393239, 4, 0, 393240, 4, 0, 393242, 4, 0, 393251, 6, 0, 458787, 6, 0, 524295, 4, 0, 524296, 4, 0, 524323, 6, 0, 589825, 3, 0, 589826, 3, 0, 589827, 3, 0, 589828, 3, 0, 589829, 3, 0, 589830, 3, 0, 589831, 3, 0, 589832, 3, 0, 589833, 3, 0, 589834, 3, 0, 589835, 3, 0, 589836, 3, 0, 589837, 3, 0, 589838, 3, 0, 589839, 3, 0, 589840, 3, 0, 589841, 3, 0, 589842, 3, 0, 589843, 3, 0, 589844, 3, 0, 589845, 3, 0, 589846, 3, 0, 589847, 3, 0, 589848, 3, 0, 589849, 3, 0, 589850, 3, 0, 589851, 3, 0, 589852, 3, 0, 589853, 3, 0, 589854, 3, 0, 589855, 3, 0, 589856, 3, 0, 589857, 3, 0, 589858, 3, 0, 589859, 3, 0 )
 
 [node name="Player_Container" type="Node2D" parent="."]
 script = ExtResource( 5 )
@@ -394,21 +451,26 @@ script = ExtResource( 5 )
 [node name="Enemy_Container" type="Node2D" parent="."]
 
 [node name="Enemy_Ground" parent="Enemy_Container" instance=ExtResource( 6 )]
-max_constraint = 1800
-min_constraint = 1200
+position = Vector2( 1123, 545.401 )
+max_constraint = 2150
+min_constraint = 150
 
 [node name="Enemy_Flying" parent="Enemy_Container" instance=ExtResource( 1 )]
+position = Vector2( 1129, 196 )
 
 [node name="Coin_Container" type="Node2D" parent="."]
 
 [node name="Coin" parent="Coin_Container" instance=ExtResource( 9 )]
-position = Vector2( 402, 420 )
+position = Vector2( 1698, 94 )
 
 [node name="Coin2" parent="Coin_Container" instance=ExtResource( 9 )]
-position = Vector2( 732.2, 300.4 )
+position = Vector2( 992.2, 540.4 )
+
+[node name="Coin3" parent="Coin_Container" instance=ExtResource( 9 )]
+position = Vector2( 2200.48, 534.493 )
 
 [node name="Portal_to_3" type="Area2D" parent="."]
-position = Vector2( 2078.89, 545.886 )
+position = Vector2( 162.89, 33.886 )
 script = ExtResource( 7 )
 
 [node name="Sprite" type="Sprite" parent="Portal_to_3"]
@@ -418,7 +480,7 @@ texture = ExtResource( 8 )
 polygon = PoolVector2Array( 24, -27.2, 24, -25.8, 31, -18.8, 31, -16.5, 32, -14.9, 32, 32, -32, 32, -32, -16, -22, -29, -19.5, -29, -14.2, -32, 14.4, -32 )
 
 [node name="Foreground" type="TileMap" parent="."]
-tile_set = SubResource( 17 )
+tile_set = SubResource( 18 )
 collision_layer = 0
 collision_mask = 0
 format = 1

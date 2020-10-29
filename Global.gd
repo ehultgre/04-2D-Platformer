@@ -2,7 +2,7 @@ extends Node
 
 var score = 0
 var lives = 5
-var max_live = 5
+var max_lives = 5
 var health = 100
 var max_health = 100
 var level = 0
